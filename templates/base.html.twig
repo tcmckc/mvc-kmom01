@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="img/mvc_logo.png">
+        <link rel="stylesheet" href="scss/style.css"/>
+        
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> 
+
+    </head>
+    <body>
+        <div class="header">
+            <div class="siteheader">
+                <img src="img/mvc_logo.png" width="100px" alt="logo">
+            </div>
+
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="{{ url("home") }}">Home</a></li>
+                        <li><a href="{{ path("about") }}">About</a></li>
+                        <li><a href="{{ path("report") }}">Report</a></li>
+                        {# <li><a href="{{ path("debug") }}">Debug</a></li> #}
+                </nav>
+            </div>
+        </div>
+
+        {% block content %}
+        Default content
+        {% endblock %}
+
+        <div class="sitefooter">
+            <hr>
+            <p>© 2022 TOMOKO S.I.</p>
+        </div>
+     
+    </body>
+</html>
