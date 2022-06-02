@@ -72,4 +72,20 @@ img {
   font-size: 0.8em;
   margin-top: 100px;
 }
+
+.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: black;
+}
+
+.card {
+  width: 8px;
+  height: 20px;
+  background-color: white;
+  margin: 5px;
+}
 /*# sourceMappingURL=style.css.map */

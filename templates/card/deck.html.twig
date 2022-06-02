@@ -1,0 +1,20 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Deck{% endblock %}
+
+{# {% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset("scss/style.css") }}"/>
+{% endblock %} #}
+
+{% block content %}
+
+<main class="main">
+    <h1>{{ title }}</h1>
+    <div class="card-container">
+        {% for card in deck %}
+            <li class="card">{{ card[0] }}{{ card[1] }}</li>
+        {% endfor %}
+    </div>
+</main> 
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Card{% endblock %}
+
+{% block content %}
+
+<h1>{{ title }}</h1>
+
+<li><a href="{{ link_to_deck }}">Deck</a></li>
+<li><a href="{{ link_to_shuffle }}">Shuffle</a></li>
+<li><a href="{{ link_to_draw }}">Draw</a></li>
+
+
+{% endblock %}

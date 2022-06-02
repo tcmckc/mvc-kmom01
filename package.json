@@ -15,7 +15,7 @@
     "watch": "encore dev --watch",
     "build": "encore production --progress",
     "lint": "stylelint \"**/*.scss\"",
-    "style": "public/scss/style.scss public/css/style.css --no-source-map"
+    "style": "public/scss/style.scss public/scss/style.css --no-source-map"
   },
   "name": "report",
   "version": "1.0.0",

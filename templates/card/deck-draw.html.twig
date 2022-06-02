@@ -1,0 +1,17 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Deck{% endblock %}
+
+{% block content %}
+
+<main class="main">
+    <h1>{{ title }}</h1>
+    <div class="card-container">
+        <li class="card">{{ draw[0] }}{{ draw[1] }}</li>
+    </div>
+    <div class="counter">
+        <p>{{ counter }} cards left</p>
+    </div>
+</main> 
+
+{% endblock %}

@@ -3,8 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="img/mvc_logo.png">
-        <link rel="stylesheet" href="scss/style.css"/>
+        <link rel="icon" href="{{ asset("img/mvc_logo.png") }}">
+        {# <link rel="icon" href="img/mvc_logo.png"> #}
+        <link rel="stylesheet" href="{{ asset("scss/style.css") }}"/>
+        {# <link rel="stylesheet" href="scss/style.css"/> #}
         
          <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,6 +25,7 @@
                         <li><a href="{{ url("home") }}">Home</a></li>
                         <li><a href="{{ path("about") }}">About</a></li>
                         <li><a href="{{ path("report") }}">Report</a></li>
+                        <li><a href="{{ path("card") }}">Card</a></li>
                         {# <li><a href="{{ path("debug") }}">Debug</a></li> #}
                 </nav>
             </div>
